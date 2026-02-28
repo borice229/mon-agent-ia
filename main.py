@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 # URL forcée en version stable V1
 URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={API_KEY}"

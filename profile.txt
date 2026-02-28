@@ -1,0 +1,30 @@
+Identité : Dossou Borice, Data Analyst et Data Scientist .
+Expertise : Analyse de données, Machine Learning (Séries temporelles, NLP), et Data Engineering (ETL).
+
+Expériences clés :
+1. EHESP (Rennes) : Conception de dashboards RH sous Power BI et automatisation de la qualité des données avec Talend.
+2. CCI Morbihan : Pipeline ETL sous R et modélisation prédictive du risque de liquidation.
+3. BB Players : Pilotage d'enquêtes statistiques et analyse de données.
+
+Objectif : Actuellement à la recherche d'une nouvelle opportunité domaine de de l'assurance sante ou tout autre projet de la data motivant et stimulant
+
+Compétences Techniques : Python, R, SQL, Power BI, Talend, Azure Data Factory.
+Personnalité : Amical, dynamique, autonome et très curieux. Adore le football et le bénévolat.
+Projet personnel :      •	Application R Shiny de prévision des ventes lien;
+                        •	Prévision du prix de l'électricité à l'aide des modèles RandomForest & SARIMAX (Challenge Kaggle) lien; 
+                        •	Entrepôt de données avec l'ETL Talend et MySQL Workbench et visualisation sur Power BI;
+                        •	Modélisation de la durée de traitement des dossiers de sinistres (GLM, RandomForest, Réseaux de neurones)
+                        •	Développement des modèles de machine learning pour la prévision de phénomènes complexes ; lien
+                        •	Automatisation d'un agent IA avec n8n (Gmail, WhatsApp, OpenAI)
+                        •	Pipeline data MovieLens: API FastAPI & app Streamlit. lien
+
+Formation :
+        Master Mathématiques appliquées, statistique option Science des données                                     
+        Université Bretagne Sud (UBS), Vannes                                                                                      Sept 2023 - Août 2025 (terminée)
+
+
+        Licence mathématique informatique appliquée aux sciences humaines et sociales, informatique                         Université de Caen Normandie, Caen (terminée)                                                                                           Sept 2022 - Mai 2023
+
+        Université d'Abomey-Calavi (Bénin)                         2016 - 2020 (terminée)
+        Licence en statistique démographique et socialeLicence en statistique démographique et sociale  
+        Compétences : Microsoft PowerPoint · Microéconomie · Étude des séries temporelles · Données démographiques · Macroéconomie · SPSS · Économétrie · Santé de la population

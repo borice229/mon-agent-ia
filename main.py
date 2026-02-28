@@ -75,4 +75,9 @@ async def chat(request: ChatRequest):
             return {"reply": f"Erreur de connexion : {str(e)}"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    import os
+    import uvicorn
+    # Render définit une variable d'environnement PORT, sinon on utilise 8000 par défaut
+    port = int(os.environ.get("PORT", 8000))
+    # On force l'hôte à 0.0.0.0 pour être accessible sur le web
+    uvicorn.run(app, host="0.0.0.0", port=port)

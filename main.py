@@ -73,6 +73,11 @@ async def chat(request: ChatRequest):
         except Exception as e:
             return {"reply": f"Erreur de connexion : {str(e)}"}
 
+
+@app.get("/")
+async def test():
+    return {"key": API_KEY}
+
 if __name__ == "__main__":
     import os
     import uvicorn

@@ -21,7 +21,7 @@ app.add_middleware(
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 # URL forcée en version stable V1
-URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={API_KEY}"
+URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}"
 
 class ChatRequest(BaseModel):
     message: str
@@ -72,11 +72,6 @@ async def chat(request: ChatRequest):
                 
         except Exception as e:
             return {"reply": f"Erreur de connexion : {str(e)}"}
-
-
-@app.get("/")
-async def test():
-    return {"key": API_KEY}
 
 if __name__ == "__main__":
     import os

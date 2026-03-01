@@ -18,14 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 API_KEY = os.getenv("GEMINI_API_KEY")
-
-if API_KEY:
-    print(f"Clé détectée ! Elle commence par : {API_KEY[:5]}")
-else:
-    print("ERREUR : Le serveur ne voit aucune clé !")
-
 
 # URL forcée en version stable V1
 URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={API_KEY}"

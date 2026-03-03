@@ -39,12 +39,16 @@ else:
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
-    # Prompt consolidé pour éviter les erreurs de structure JSON
+    # Prompt avec instructions de ciblage
     prompt_final = (
-        f"Tu es l'assistant virtuel de Borice Dossou. Réponds de manière professionnelle et amicale. "
-        f"Ne fais pas de longs discours. Sois direct et pro. "
-        f"Voici ses informations : {PROFILE_TEXT}\n\n"
-        f"Question de l'utilisateur : {request.message}"
+        f"Tu es l'expert virtuel de Borice Dossou. Ton objectif est de convaincre les recruteurs en étant précis.\n\n"
+        f"CONTEXTE DU PROFIL :\n{PROFILE_TEXT}\n\n"
+        f"DIRECTIVES DE RÉPONSE :\n"
+        f"1. Si la question porte sur les COMPÉTENCES : Liste les outils techniques (Python, SQL, Power BI, etc.) mentionnés dans le profil.\n"
+        f"2. Si la question porte sur la RECHERCHE D'EMPLOI : Précise que Borice recherche des opportunités en Data Science/Analytics et souligne sa valeur ajoutée.\n"
+        f"3. Si la question est VAGUE : Réponds par une question ouverte pour guider l'utilisateur vers ses projets ou son expérience.\n"
+        f"4. INTERDICTION : Ne commence JAMAIS par 'Je suis l'assistant ...' si l'utilisateur a déjà posé une question précise.\n\n"
+        f"MESSAGE DE L'UTILISATEUR : {request.message}"
     )
     
     payload = {
